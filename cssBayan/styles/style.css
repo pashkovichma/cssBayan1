@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1em;
+}
+
+header {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mem-image{
+    width: 100%;
+}
