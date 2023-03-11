@@ -4,6 +4,7 @@
 
 body {
     font-size: 1em;
+    background-color: lightgrey;
 }
 
 header {
@@ -17,6 +18,70 @@ header {
     text-align: center;
 }
 
-.mem-image{
-    width: 100%;
+.item-name {
+    display: flex;
+    justify-conten: space-between;
+    align-items: center;
+}
+
+.item-name__button {
+    width: 15px;
+    height: 15px;
+    transition: all 0.4s;
+}
+.mem-image {
+    width: 0;
+    height: 0;
+    transition: all 0.4s;
+}
+
+h1 {
+    text-aligh: start;
+}
+
+.item-name__title {
+    font-size:1.2rem;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+.container__item {
+    background-color: grey;
+}
+
+.item-name {
+    badding: 1 rem;
+}
+
+.item-image {
+    display: flex;
+    justify-content: center;
+    align-item: center;
+}
+
+.item-iput:checked~label .mem-image,
+.container__item:hover .mem-image {
+    width: 50%;
+    height: 50%;
+    padding: 1rem 0;
+}
+
+.item-iput:checked~label .item-name__button,
+.container__item:hover .item-name__button {
+    transform: rotate(-90deg);
+    background: url('../assets/cross.svg') center/cover no-repeat;
+}
+
+.item-iput:checked~label .item-name__title {
+    color: white;
+}
+
+.container__item,
+.item-name,
+.mem-image {
+    cursor: pointer;
+}
+
+.container:hover .item-name__title {
+    color: white;
 }
